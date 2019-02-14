@@ -1,0 +1,12 @@
+## TODO
+Add restore functionality to backups
+Add logs for all running processes
+Add ssl certificate
+Fix that ugly shit you call website
+Chance the 404 code to "no blogs posted (yet)" or something
+Remove images from the main list of posts, and only show them once the users clock on it
+Put the selection buttoms for the pages at the top
+Google how to make a proper blog for fucks sake
+Finish cron jobs
+Clean enviroment
+
