@@ -11,7 +11,6 @@ then
     echo "PostgreSQL started"
 fi
 
-python manage.py flush --no-input
 python manage.py makemigrations && python manage.py migrate --noinput
 python manage.py collectstatic --no-input
 chmod -R 755 /usr/src/app/static/
