@@ -10,7 +10,7 @@
         <a href="{% url 'post' post_tag=post.id %}"><img src="{{ post.cover }}" alt=""></a>
     </figure>
     <figcaption><p>{{ post.caption }}</p></figcaption>
-    <p class="size-3">{{ post.content }}</p>
+    <p class="size-3">{{ post.content|linebreaksbr }}</p>
 </article>
 {% endfor %}
 {% endblock %}
