@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="{% static "style/layout.css" %}">
+    </head>
+    <body>
+        <header class="header">
+            <a href={% url "blog_index" %}>Home</a>
+            <div class="header-right">
+                <a href="{% url "latest" %}">Latest</a>
+            </div>
+            <div class="header-center">
+                <ul>
+                    {% for footer_link in footer_links %}
+                    <a href="{% url 'blog' page_num=footer_link.number %}">{{footer_link.number}}</a>
+                    {% endfor %}
+                </ul>
+            </div>
+        </header>      
+            {% block posts %}
+            {% endblock %}
+            {% if footer_links %}
+            <div class="footer">
+            </div>
+            {% endif %}
+    </body>
+</html>

@@ -1,0 +1,14 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block posts %}
+<article id="{{post.title}}">
+    <h1>{{ post.title }}</h1>
+    <time datetime="{{ post.DATE }}">{{ post.date }}</time>
+    <figure class="size-4">
+        <img src="{{ post.cover }}" alt="">
+    </figure>
+    <figcaption><p>{{ post.caption }}</p></figcaption>
+    <p>{{ post.content }}</p>
+</article>
+{% endblock %}

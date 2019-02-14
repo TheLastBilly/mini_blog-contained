@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: white;
+    height: 100%;
+}
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+}
+.login-box h1{
+    text-align: center;
+    font-size: 45px;
+}
+.login-box h3{
+    color: rgb(56, 56, 56);
+    text-align: center;
+    font-size: 15px;
+    font-variant-caps: all-petite-caps;
+    background: transparent;
+    padding-bottom: 40px;
+}
+.input_value{
+    text-align: center;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    font-size: 25px;
+    background: transparent;
+    border-top: transparent !important;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    border-bottom: 4px solid !important;
+}
+.credentials-btn input{
+    font-size: 20px;
+    display: flex;
+    overflow: hidden;
+    background: transparent;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #353839;
+    padding: 12px 40px;
+    border-radius: 24px;
+    outline: none;
+    transform: translateY(1px);
+    cursor: pointer;
+    box-shadow: 0 5px #999
+}
+.btn:hover{
+    background-color: #dfdfe5;
+}
+.btn:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+  }
+.footer-links{
+    text-align: center;
+    list-style: none;
+}
+ul, li{
+    padding: 0;
+    margin: 0;
+}
+.footer-links{
+    margin: 40px;
+    color: #6a6a6a;
+}
+.top-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #949499;
+}
+.posts{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    transform: translate(-50%, -50%);
+}
+.notfoundintro{
+    text-align: center;
+    font-size: 60px;
+    color: rgb(56, 56, 56);
+}
+.notfoundfooter{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(56, 56, 56);
+}
+.posts_list{
+    margin-top: 80px;
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 400px;
+}
+.posts_list img{
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    height: 210px;
+    width: 420px;
+    border-radius: 15px;
+}
+.posts_list h1{
+    color: #6a6a6a;
+    font-size: 45px;
+    text-align: center;
+    font-variant-caps: all-petite-caps;
+}
+.posts_list p{
+    text-align: justify;
+    width: 100%;
+    color: #6a6a6a;
+    font-size: 20px;
+}
+.posts_list li{
+    margin-top: 60px;
+}
+.post_page{
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 60px;
+    width: 600px;
+}
+.post_page img{
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    height: 250px;
+    border-radius: 15px;
+}
+.post_page h1{
+    color: #6a6a6a;
+    font-size: 45px;
+    text-align: center;
+    font-variant-caps: all-petite-caps;
+}
+.post_page p{
+    text-align: justify;
+    width: 100%;
+    color: #6a6a6a;
+    font-size: 20px;
+    width: 600px;
+    margin-bottom: 100px;
+}
+html{
+    height: 100%;
+  }
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.header a {
+    float: left;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    color: #666;
+    font-size: 20px;
+}
+.header-right{
+    float: right;
+}
+.header-center{
+    float: center;
+}
+.header-center li{
+    display: inline-block;
+}
+.header-center ul{
+    text-align: center;
+}
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.footer{
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.footer a{
+    margin: 7px;
+    color: #6a6a6a;
+    text-decoration: none;
+}

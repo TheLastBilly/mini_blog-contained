@@ -1,0 +1,18 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block posts %}
+<ul class="posts_list">
+    {% for pst in posts %}
+        <li>
+            <a href="{% url 'post' post_code=pst.id %}">
+                {% if alone %}
+                <img src="{{pst.cover}}" alt="">
+                {% endif %}
+                <h1>{{pst.title}}</h1>
+            </a>
+            <p>{{pst.content}}</p>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock posts %}div

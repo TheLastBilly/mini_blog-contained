@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block posts %}
+{% for post in posts %}
+<article id="{{post.tag}}" class="blog_post">
+    <a href="{% url 'post' post_tag=post.id %}">{{ post.title }}</a>
+    <time datetime="{{ post.DATE }}">{{ post.date }}</time>
+    <figure class="size-3">
+        <a href="{% url 'post' post_tag=post.id %}"><img src="{{ post.cover }}" alt=""></a>
+    </figure>
+    <figcaption><p>{{ post.caption }}</p></figcaption>
+    <p class="size-3">{{ post.content }}</p>
+</article>
+{% endfor %}
+{% endblock %}
