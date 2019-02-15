@@ -19,9 +19,8 @@ def page_not_found(request):
 
 def render_post(request, post_tag):
     context = get_post_context(post_tag)
-    context["icon"] = get_icon()
     if context["good"]:
-        return render(request, "blog/article.html", {"post": context})
+        return render(request, "blog/article.html", {"post": context, "icon" : get_icon()})
     else:
         return page_not_found(request)
 
