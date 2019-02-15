@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .blog_utils import *
 from django.http import HttpResponse
 
-PAGE_NAME = "LastcWroks"
+PAGE_NAME = "LastcWorks"
 
 def get_icon():
     try:
@@ -20,7 +20,7 @@ def page_not_found(request):
 def render_post(request, post_tag):
     context = get_post_context(post_tag)
     if context["good"]:
-        return render(request, "blog/article.html", {"post": context, "icon" : get_icon()})
+        return render(request, "blog/article.html", {"post": context, "icon" : get_icon(), "title" : PAGE_NAME,})
     else:
         return page_not_found(request)
 
