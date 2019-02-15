@@ -2,13 +2,13 @@
 {% load static %}
 
 {% block posts %}
-<article id="{{post.title}}">
-    <h1>{{ post.title }}</h1>
-    <time datetime="{{ post.DATE }}">{{ post.date }}</time>
+<article id="{{post.tag}}" class="blog_post">
+    <a href="{% url 'post' post_tag=post.id %}">{{ post.title }}</a>
     <figure class="size-4">
-        <img src="{{ post.cover }}" alt="">
+        <a href="{% url 'post' post_tag=post.id %}"><img src="{{ post.cover }}" alt=""></a>
     </figure>
     <figcaption><p>{{ post.caption }}</p></figcaption>
-    <p>{{ post.content|linebreaksbr }}</p>
+    <time datetime="{{ post.date|date:'Y-m-d' }}" class="created">Created {{post.date|date:'M d, Y'}}</time>
+    <p class="size-3">{{ post.content }}</p>
 </article>
 {% endblock %}

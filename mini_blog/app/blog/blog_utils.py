@@ -17,6 +17,7 @@ def get_post_context(post_tag):
                 "caption" : post.caption,
                 "id" : str(post.tag),
                 "good" : True,
+                "date" : post.date,
             }
             return context
         else:
@@ -44,6 +45,7 @@ def get_posts_page(page_num):
                     "cover" : item.cover.url,
                     "caption" : item.caption,
                     "id" : str(item.tag),
+                    "date" : item.date,
                 }
                 page.append(post)
                 i +=1
@@ -51,4 +53,5 @@ def get_posts_page(page_num):
                     return page
             return page
     except Exception as e:
+        print(e)
         return [] 

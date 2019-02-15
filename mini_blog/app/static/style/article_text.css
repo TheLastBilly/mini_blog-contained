@@ -1,11 +1,12 @@
 h2,p:not(:last-child){
     margin-bottom: 2.4rem;
 }
-h1, .blog_post a { font: 2.4rem/1.2 "Times New Roman"; color: hsl(000, 0%, 33%); text-align: center; margin-bottom: 0.25in; text-transform: uppercase;}   
-h2 { font: 2.0rem/1.2 "Times New Roman"; } 
-h3 { font: 1.0rem/1.2 "Times New Roman"; } 
-p { font: 0.9rem/1.5 "Times New Roman"; text-align: justify;}
-figcaption p { font: 0.75rem/1.5 "Times New Roman"; text-align: center; margin-bottom: 0.2in;}
+h1, .blog_post a { font: 2.4rem/1.2 "Roboto"; color: black; text-align: center; margin-bottom: 0.25in; text-transform: uppercase;}   
+.created { font: 0.8rem/1.2 "Roboto"; color: rgb(27, 27, 27); margin-bottom: 0.2in; grid-column: 2/7; } 
+h2 { font: 2.0rem/1.2 "Roboto"; } 
+h3 { font: 1.0rem/1.2 "Roboto"; } 
+p { font: 0.9rem/1.5 "Roboto"; text-align: justify;}
+figcaption p { font: 0.75rem/1.5 "Roboto"; text-align: center; margin-bottom: 0.2in; color: rgba(84, 84, 84, 0.849);}
 
 @media (max-width: 8.5in) { :root { font-size: 16px; } }
 @media (max-width: 5in) { :root { font-size: 14px; } }

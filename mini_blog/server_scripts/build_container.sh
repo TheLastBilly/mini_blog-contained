@@ -7,6 +7,8 @@ repo_source="git@github.com:TheLastBilly/mini_blog-contained.git"
 if [ -d "$BUILD_DIR" ]
 then
     docker stop $(docker ps -a -q)
+    docker image prune
+    docker volume rm miniblog_static_volume
     rm -rf "$BUILD_DIR"
     mkdir "$BUILD_DIR"
 else
