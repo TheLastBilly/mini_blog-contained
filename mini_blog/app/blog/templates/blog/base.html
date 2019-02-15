@@ -17,7 +17,7 @@
     <body>
         <header class="size-5">
             <div class="topnav">
-                <a class="active" href="{% url 'blog_index' %}">Home</a>
+                <a class="active" href="{% url 'blog_index' %}">{{ title }}}</a>
                 <div class="pages">
                     {% for footer_link in footer_links %}
                     <a href="{% url 'blog' page_num=footer_link.number %}">{{footer_link.number}}</a>
