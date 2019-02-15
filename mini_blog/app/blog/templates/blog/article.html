@@ -9,6 +9,6 @@
     </figure>
     <figcaption><p>{{ post.caption }}</p></figcaption>
     <time datetime="{{ post.date|date:'Y-m-d' }}" class="created">Created {{post.date|date:'M d, Y'}}</time>
-    <p class="size-3">{{ post.content }}</p>
+    <p class="size-3">{{ post.content|linebreaksbr }}</p>
 </article>
 {% endblock %}
