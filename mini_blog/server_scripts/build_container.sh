@@ -6,7 +6,7 @@ repo_source="git@github.com:TheLastBilly/mini_blog-contained.git"
 
 if [ -d "$BUILD_DIR" ]
 then
-    docker stop $(docker ps -a -q)
+    docker-compose -f "$YML_DIR"docker-compose.yml down
     docker image prune
     docker volume rm miniblog_static_volume
     rm -rf "$BUILD_DIR"
